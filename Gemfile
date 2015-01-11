@@ -29,7 +29,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
-gem 'aws-sdk-core'
+gem 'aws-sdk'
+gem 'sidekiq'
+gem 'zencoder', '~> 2.5.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
