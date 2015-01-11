@@ -2,7 +2,6 @@ class OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
   skip_before_filter :authenticate_user!
 	def all
-		p env["omniauth.auth"]
 		user = User.find_for_oauth(env["omniauth.auth"], current_user)
 		if user.persisted?
 			sign_in_and_redirect(user)

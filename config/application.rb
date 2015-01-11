@@ -28,5 +28,11 @@ module Aergia
     CONFIG.each do |k,v|
       ENV[k.upcase] ||= v
     end
+  
+    aws_keys = File.join(Rails.root, 'config', 's3.yml')
+    AWS_CONFIG = HashWithIndifferentAccess.new(YAML::load(IO.read(aws_keys)))[Rails.env]
+    AWS_CONFIG.each do |k,v|
+      ENV[k.upcase] ||= v
+    end
   end
 end

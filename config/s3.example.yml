@@ -1,0 +1,9 @@
+development:
+  access_key: my_access_key_id
+  secret_access_key: my_very_secret_key
+  bucket: bucket_name
+
+production:
+  access_key: my_access_key_id
+  secret_access_key: my_very_secret_key
+  bucket: bucket_name

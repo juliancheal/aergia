@@ -29,6 +29,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-github'
+gem 'aws-sdk-core'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -44,7 +45,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  gem 'spring',        group: :development
-  gem 'quiet_assets', group: :development
+  gem 'spring'
+  gem 'quiet_assets'
 end
 
